@@ -1,0 +1,81 @@
+name: 友链申请
+description: 申请加入 ETERNAL ARCHIVE 的友链页
+title: "[友链申请] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 友链申请
+
+        谢谢你愿意与我建立链接。友链是互相认可的个人站点推荐，不是流量交换。
+
+        我会优先考虑长期维护、内容真诚、能够正常访问的个人站点；有过交流或创作方向相近的朋友尤其欢迎。
+
+        此 Issue 对所有人公开。请只填写可以公开展示的信息，不要提交邮箱、QQ、微信、住址或其他私人资料。
+
+  - type: input
+    id: site-name
+    attributes:
+      label: 站点名称
+      description: 显示在友链卡片上的名称。
+      placeholder: YunFeng's Archive
+    validations:
+      required: true
+
+  - type: input
+    id: site-url
+    attributes:
+      label: 站点地址
+      description: 请提供可正常访问的 HTTPS 地址。
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: textarea
+    id: site-description
+    attributes:
+      label: 站点简介
+      description: 用一两句话介绍你的站点和主要内容。
+      placeholder: 记录技术、创作与生活中的长期观察。
+    validations:
+      required: true
+
+  - type: input
+    id: avatar-url
+    attributes:
+      label: 头像或站点 Logo 地址（可选）
+      description: 请提供稳定、可公开访问的图片 URL。
+      placeholder: https://example.com/avatar.png
+    validations:
+      required: false
+
+  - type: input
+    id: friend-link-page
+    attributes:
+      label: 你的友链页地址（可选）
+      description: 若已建立友链页，请提供地址；ETERNAL ARCHIVE 的友链页上线后会以双向展示为准。
+      placeholder: https://example.com/links
+    validations:
+      required: false
+
+  - type: textarea
+    id: connection
+    attributes:
+      label: 想说的话（可选）
+      description: 可以写下我们相识的方式、共同兴趣，或你希望我先了解的内容。
+      placeholder: 我们都在记录……
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 确认事项
+      description: 请确认以下内容。
+      options:
+        - label: 我确认上述内容可以公开展示，且不包含私人联系方式。
+          required: true
+        - label: 我确认站点可以正常访问，内容适合公开推荐。
+          required: true
+        - label: 我理解友链会人工审核，提交不代表一定会被收录。
+          required: true
