@@ -1,6 +1,5 @@
 name: 友链申请
 description: 申请加入 ETERNAL ARCHIVE 的友链页
-title: ""
 body:
   - type: markdown
     attributes:
