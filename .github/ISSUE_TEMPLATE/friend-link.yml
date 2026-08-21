@@ -7,7 +7,7 @@ body:
       value: |
         ## 友链申请
 
-        谢谢你愿意与我建立链接。友链是公认的个人站点推荐。
+        谢谢你愿意与我建立链接。友链是互相认可的个人站点推荐，不是流量交换。
 
         我会优先考虑长期维护、内容真诚、能够正常访问的个人站点；有过交流或创作方向相近的朋友尤其欢迎。
 
@@ -16,9 +16,9 @@ body:
   - type: input
     id: site-name
     attributes:
-      label: 个人昵称
-      description: 显示在友链卡片上的称呼。
-      placeholder: YunFeng
+      label: 站点名称
+      description: 显示在友链卡片上的名称。
+      placeholder: YunFeng's Archive
     validations:
       required: true
 
