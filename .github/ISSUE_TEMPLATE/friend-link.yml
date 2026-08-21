@@ -14,6 +14,33 @@ body:
         此 Issue 对所有人公开。请只填写可以公开展示的信息，不要提交邮箱、QQ、微信、住址或其他私人资料。
 
   - type: input
+    id: nickname
+    attributes:
+      label: 昵称
+      description: 显示在友链卡片上的个人称呼。
+      placeholder: YunFeng
+    validations:
+      required: true
+
+  - type: input
+    id: avatar-url
+    attributes:
+      label: 头像或站点 Logo 地址（可选）
+      description: 请提供稳定、可公开访问的图片 URL。
+      placeholder: https://example.com/avatar.png
+    validations:
+      required: false
+
+  - type: textarea
+    id: site-description
+    attributes:
+      label: 想说的话
+      description: 用一两句话介绍你的站点和主要内容。
+      placeholder: 记录技术、创作与生活中的长期观察。
+    validations:
+      required: true
+
+  - type: input
     id: site-name
     attributes:
       label: 站点名称
@@ -30,24 +57,6 @@ body:
       placeholder: https://example.com
     validations:
       required: true
-
-  - type: textarea
-    id: site-description
-    attributes:
-      label: 想说的话
-      description: 用一两句话介绍你的站点和主要内容。
-      placeholder: 记录技术、创作与生活中的长期观察。
-    validations:
-      required: true
-
-  - type: input
-    id: avatar-url
-    attributes:
-      label: 头像或站点 Logo 地址（可选）
-      description: 请提供稳定、可公开访问的图片 URL。
-      placeholder: https://example.com/avatar.png
-    validations:
-      required: false
 
   - type: checkboxes
     id: confirmations
