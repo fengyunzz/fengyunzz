@@ -25,9 +25,9 @@ body:
   - type: input
     id: avatar-url
     attributes:
-      label: 头像或站点 Logo 地址（可选）
-      description: 请提供稳定、可公开访问的图片 URL。
-      placeholder: https://example.com/avatar.png
+      label: 头像或站点 Logo 地址
+      description: 默认采用 GitHub 头像：https://github.com/<ID>.png
+      placeholder: https://github.com/fengyunzz.png
     validations:
       required: false
 
